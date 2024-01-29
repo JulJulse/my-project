@@ -1,0 +1,151 @@
+.delivery-form {
+    min-height: 100vh;
+
+    background: #181818;
+
+    display: flex;
+    align-items: center;
+
+    color: #fff;
+
+    text-align: center;
+}
+
+.delivery-form__title {
+    font-family: Play, sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+}
+
+.delivery-form__form {
+    display: flex;
+    gap: 50px;
+}
+
+.delivery-form__left {
+    width: 462px;
+
+    display: grid;
+    grid-template-rows: repeat(3, 80px);
+    grid-template-columns: repeat(4, 106px);
+    gap: 20px;
+}
+.text-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    text-align: left;
+
+}
+.text-input span {
+    font-family: Play, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+    color: #fff;
+}
+.text-input  input {
+    border-radius: 4px;
+    height: 58px;
+
+    padding: 0 10px;
+
+    font-family: Play, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+    outline: none;
+    border: none;
+}
+
+
+.text-input_size_m {
+    grid-column-end: span 2;
+}
+.text-input_size_l {
+    grid-column-end: span 4;
+}
+.text-input_h_l {
+}
+.text-input_h_l input {
+
+}
+.text-input textarea {
+    resize: none;
+    width: 450px;
+    height: 152px;
+
+    border-radius: 4px;
+}
+
+.custom-radio__text {
+    font-family: Play, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+    color: #fff;
+}
+
+.radio {
+    display: flex;
+    cursor: pointer;
+}
+
+.radio__elem {
+    display: none;
+}
+
+.radio__elem:checked ~ .radio__visible {
+    &::before {
+        display: block;
+    }
+}
+
+.radio__visible {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.radio__visible::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    background: #E01F3D;
+    border-radius: 50%;
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn--red {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 100px;
+    padding: 21px 41px;
+}
+
+.btn--red:hover{
+    background: #CA1B36;
+    border-radius: 100px;
+    padding: 21px 41px;
+
+}
+
+.btn-2 {
+    border: none;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}

@@ -1,0 +1,103 @@
+.feedback {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.feedback__container {
+  width: 100%;
+}
+
+.feedback__title {
+  font-family: Play, sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #292929;
+}
+
+.feedback-card {
+  width: calc(100% - 80px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  text-align: left;
+  padding: 40px;
+  background: #F8FAF9;
+}
+
+.feedback-card__user-feedback {
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.feedback-card__user-feedback span {
+  font-family: Play, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #292929;
+}
+
+.feedback-card__user-feedback p {
+  font-family: Play, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 500px;
+  color: #666666;
+}
+
+.feedback__users {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.feedback__user {
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.feedback__user img {
+  width: 100%;
+  height: auto;
+}
+
+.feedback__user_current {
+  outline: 4px solid #E01F3D;
+}

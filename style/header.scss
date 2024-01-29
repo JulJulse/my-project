@@ -1,0 +1,48 @@
+.header {
+    top: 0;
+    left: 0;
+    position: fixed;
+
+    padding: 20px;
+
+    width: 100%;
+
+    background: #F5F5F5;
+
+    z-index: 9;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav {
+    display: flex;
+    gap: 27px;
+}
+
+.header__nav a {
+    font-family: Alegreya Sans, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+
+    color: #292929;
+}
+
+.header__phone {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+
+}
+
+.header__phone a {
+    font-family: Play, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+
+    color: #292929;
+}
