@@ -1,0 +1,18 @@
+.social {
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-start;
+    margin-top: rem(-35px);
+
+    @include phones {
+        margin-top: 0;
+        justify-content: flex-start;
+        padding: rem(7px) rem(0)
+    }
+}
+
+.social__item {
+    display: flex;
+    gap: rem(1px);
+    align-items: center;
+}

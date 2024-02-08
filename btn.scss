@@ -1,0 +1,26 @@
+.btn {
+    font-style: rem(19px);
+    font-weight: bold;
+    padding: rem(18px) rem(35px);
+    text-transform: uppercase;
+    border-radius: rem(100px);
+    line-height: 1;
+    text-decoration: none;
+
+     @include tablets {
+        margin-top: 10px;
+     }
+
+     @include phones {
+        margin-top: 0px;
+     }
+    &--theme--orange {
+        background: #fff;
+        color: #292929;
+
+        &:hover {
+            background: #E01F3D;
+            color: #fff;
+        }
+    }
+}

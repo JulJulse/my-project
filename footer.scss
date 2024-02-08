@@ -1,0 +1,25 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: rem(24px);
+    background: #fff;
+}
+
+.footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+
+    @include phones {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,40 @@
+$containerWidth: 940px;
+$baseFontSize: 18px;
+
+//colors
+$gray: #666666;
+
+//breakpoints
+$phones: 480px;
+$tablets: 768px;
+
+@import "./media.scss";
+
+//normalize 
+@import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css";
+
+//setups
+@import "https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap";
+@import "./layout.scss";
+
+//style
+@import "./preview.scss";
+@import "./header.scss";
+@import "./hamburger.scss";
+@import "./features.scss";
+@import "./feature.scss";
+@import "./btn.scss";
+@import "./section.scss";
+@import "./benefits.scss"; 
+@import "./benefit.scss";
+@import "./benefits-section.scss";
+@import "./reviews.display.scss";
+@import "./reviews.scss";
+@import "./form.scss";
+@import "./radio.scss";
+@import "./fixed-menu.scss";
+@import "./map.scss";
+@import "./social.scss";
+@import "./footer.scss";
+@import "./sprire.svg";
+

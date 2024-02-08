@@ -1,0 +1,17 @@
+.btn {
+  font-style: rem(19px);
+  font-weight: bold;
+  padding: rem(18px) rem(35px);
+  text-transform: uppercase;
+  border-radius: rem(100px);
+  line-height: 7.1;
+  text-decoration: none;
+}
+.btn--theme--orange {
+  background: #fff;
+  color: #292929;
+}
+.btn--theme--orange:hover {
+  background: #E01F3D;
+  color: #fff;
+}

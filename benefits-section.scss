@@ -1,0 +1,9 @@
+.benefits-section {
+    background: url(./assets/Vector\ 2.png) left rem(33px) top 95% no-repeat;
+    position: relative;
+
+    @include phones {
+        background: none;
+        height: 191vh;
+    }
+}

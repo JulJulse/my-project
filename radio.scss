@@ -1,0 +1,88 @@
+
+.form__controls {
+    display: flex;
+    flex-wrap: wrap;
+    color: #FFFFFF;
+    padding-top: 19px;
+    gap: 9px;
+}
+
+.form__btns {
+    font-family: Body 2 Regular;
+    justify-content: flex-start;
+    padding-top: 51px;
+}
+
+.btn--red {
+    background: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: rem(100px);
+    padding: rem(21px) rem(41px);
+    border-radius: rem(100px);
+    font-size: 21px;
+}
+
+.btn--red:hover{
+    background: #CA1B36;
+
+}
+
+.btn-2 {
+    border: none;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-size: rem(16px);
+}
+
+.radio {
+    display: flex;
+    cursor: pointer;
+    user-select: none;
+    padding-right: 25px;
+    align-items: center;
+
+    &--checkbox {
+        .radio__visible {
+            border-radius: 0;
+
+            &::before {
+                background: url(./assets/Vector.png) center no-repeat;
+            }
+        }
+    }
+}
+
+.radio__elem {
+    display: none;
+
+    &:checked ~ .radio__visible {
+        &::before {
+            display: block;
+        }
+    }
+}
+
+.radio__visible {
+    width: 26px;
+    height: 26px;
+    position: relative;
+    background: #FFFFFF;
+    border-radius: 50%;
+    margin: 0px 5px;
+
+    &::before {
+        content: "";
+        width: 14px;
+        height: 14px;
+        background: #E01F3D;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+    }
+}

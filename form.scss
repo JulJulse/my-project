@@ -1,0 +1,126 @@
+.delivery-form__form {
+    display: flex;
+    
+
+    @include tablets {
+        padding: 0 19px;
+        flex-direction: column
+    }
+
+    @include phones {
+        padding: 0;
+        justify-content: center;
+    }
+}
+
+.delivery-form {
+    min-height: 100vh;
+
+    background: #181818;
+
+    display: flex;
+    align-items: center;
+
+    color: #fff;
+
+    text-align: center;
+}
+
+.delivery-form__title {
+    font-family: Play, sans-serif;
+    font-size: rem(48px);
+    font-weight: 700;
+
+    text-transform: uppercase;
+}
+
+.delivery-form__form {
+    display: flex;
+    gap: rem(50px);
+}
+
+.delivery-form__left {
+    width: rem(462px);
+
+    display: grid;
+    grid-template-rows: repeat(3, 80px);
+    grid-template-columns: repeat(4, 106px);
+    gap: rem(20px);
+}
+.text-input {
+    display: flex;
+    flex-direction: column;
+    gap: rem(10px);
+
+    text-align: left;
+
+}
+.text-input span {
+    font-family: Play, sans-serif;
+    font-size: rem(16px);
+    font-weight: 400;
+
+    color: #fff;
+}
+.text-input  input {
+    border-radius: rem(4px);
+    height: rem(58px);
+
+    padding: 0 rem(10px);
+
+    font-family: Play, sans-serif;
+    font-size: rem(16px);
+    font-weight: 400;
+
+    outline: none;
+    border: none;
+}
+
+
+.text-input_size_m {
+    grid-column-end: span 2;
+}
+.text-input_size_l {
+    grid-column-end: span 4;
+}
+.text-input_h_l {
+}
+.text-input_h_l input {
+
+}
+.text-input textarea {
+    resize: none;
+    width: rem(450px);
+    height: rem(152px);
+
+    border-radius: rem(4px);
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @include tablets {
+        margin-right: 0;
+    }
+}
+
+.delivery-form__title {
+    font-size: rem(48px);
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+}
+
+.order-section {
+    background: #000;
+
+    @include phones {
+        height: 138vh;
+    }
+    
+}
+
+.form__btns {
+    display: flex;
+    justify-content: center;
+}
