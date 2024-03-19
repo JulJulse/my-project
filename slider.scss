@@ -1,0 +1,61 @@
+
+.slider-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #F8FAF9;
+}
+
+
+.slider__main-title {
+    font-size: rem(46px);
+    line-height: 1.1;
+    font-weight: bold;
+    margin-bottom: rem(15px);
+    text-transform: uppercase;
+}
+
+.slider__title-desc {
+    margin: 34px 0;
+    font-size: rem(21px);
+    margin-bottom: rem(28px);
+    padding-right: 10%;
+    line-height: 1.1;
+
+    @include tablets {
+        padding: 25%;
+        margin: -46px 0;
+    }
+
+    @include phones {
+        padding: 0 16%;
+        margin: 2px 0;
+    }
+}
+
+.slider__title-section {
+    width: 46%;
+    line-height: 1.1;
+
+    @include tablets {
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        &:before {
+            content: "";
+            width: rem(316px);
+            height: rem(330px);
+            background: url(./assets/beats-headphones.png) center center / contain no-repeat;
+            margin-bottom: 16px;
+        }
+    }
+}
+
+
+.picture {
+    width: 50%;
+}

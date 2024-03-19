@@ -18,9 +18,9 @@ $tablets: 768px;
 @import "./layout.scss";
 
 //style
+@import "./hamburger.scss";
 @import "./preview.scss";
 @import "./header.scss";
-@import "./hamburger.scss";
 @import "./features.scss";
 @import "./feature.scss";
 @import "./btn.scss";
@@ -38,4 +38,5 @@ $tablets: 768px;
 @import "./footer.scss";
 @import "./sprire.svg";
 @import "./svg.scss";
+@import "./slider.scss";
 
