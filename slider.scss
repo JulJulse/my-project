@@ -4,58 +4,112 @@
     flex-direction: row;
     align-items: center;
     background: #F8FAF9;
-}
+    position: relative;
 
-
-.slider__main-title {
-    font-size: rem(46px);
-    line-height: 1.1;
-    font-weight: bold;
-    margin-bottom: rem(15px);
-    text-transform: uppercase;
-}
-
-.slider__title-desc {
-    margin: 34px 0;
-    font-size: rem(21px);
-    margin-bottom: rem(28px);
-    padding-right: 10%;
-    line-height: 1.1;
-
-    @include tablets {
-        padding: 25%;
-        margin: -46px 0;
-    }
-
-    @include phones {
-        padding: 0 16%;
-        margin: 2px 0;
-    }
-}
-
-.slider__title-section {
-    width: 46%;
-    line-height: 1.1;
-
-    @include tablets {
-        width: 100%;
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-
-        &:before {
-            content: "";
-            width: rem(316px);
-            height: rem(330px);
-            background: url(./assets/beats-headphones.png) center center / contain no-repeat;
-            margin-bottom: 16px;
+    &:before, &:after {
+        @include tablets {
+            display: none;
         }
     }
-}
 
+    &::before {
+        content: url(./assets/galka\ 1.jpg);
+        position: absolute;
+        left: 31px;
+    }
+
+    &::after {
+        content: url(./assets/right.png);
+        position: absolute;
+        right: 100px;
+    }
+}
 
 .picture {
     width: 50%;
+    margin-left: 100px;
+}
+
+.slider__main-title {
+    font-size: 36px;
+    font-weight: bold;
+    width: 46%;
+
+    &::before {
+        content: url(./assets/gear\ 1.png);
+        position: absolute;
+        top: 59px;
+        background: gray;
+        border-radius: 23%;
+        width: 100px;
+        height: 100px;
+        
+    }
+}
+
+.slider__title-desc {
+    font-weight: 600px;
+    font-size: 16px;
+    color: #666666;
+    width: 400px;
+    width: 45%;
+    line-height: 1.1;
+}
+
+.btn--theme--orange{
+font-style: rem(19px);
+font-weight: bold;
+padding: rem(18px) rem(35px);
+text-transform: uppercase;
+border-radius: rem(100px);
+line-height: 7;
+text-decoration: none;
+
+ @include tablets {
+    margin-top: 10px;
+ }
+
+ @include phones {
+    margin-top: 0px;
+ }
+&--theme--orange {
+    background: #fff;
+    color: #292929;
+
+    &:hover {
+        background: #E01F3D;
+        color: #fff;
+    }
+}
+}
+
+.slider__subtitle-desc-two {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.slider__subtitle-desc {
+    color: #666666;
+    font-size: 16px;
+    margin: 15px;
+}
+
+.slider__title-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subtitle-desc{
+    display: flex;
+    justify-content: space-around;
+}
+
+.subtitle-desc-two {
+display: flex;
+justify-content: space-around;
+}
+
+.subtitle-desc__item {
+    margin: 0 rem(42px);
 }

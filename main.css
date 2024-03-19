@@ -87,6 +87,37 @@ img {
   max-width: 100%;
 }
 
+.hamburger {
+  width: 24px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 20px;
+  position: fixed;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
+
+.hamburger__plank {
+  display: block;
+  background: #292929;
+  height: 4px;
+  border-radius: 10px;
+}
+
 .preview {
   background-color: #F5F5F5;
   height: 100vh;
@@ -124,7 +155,7 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 100%;
-  padding: 1.3333333333rem 0 2.5rem;
+  padding: 1.3333333333rem 2.5rem;
   background: url(./assets/beats-headphones.png) right center/50% auto no-repeat;
 }
 @media screen and (max-width: 768px) {
@@ -259,6 +290,7 @@ img {
   font-family: play;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  width: 114px;
 }
 
 .phone-number__icon-elem {
@@ -277,37 +309,6 @@ img {
   font-size: 18px;
   color: #292929;
   font-family: play;
-}
-
-.hamburger {
-  width: 24px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 20px;
-  position: fixed;
-  display: none;
-}
-@media screen and (max-width: 768px) {
-  .hamburger {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-  }
-}
-
-.hamburger__plank {
-  display: block;
-  background: #292929;
-  height: 4px;
-  border-radius: 10px;
 }
 
 .features {
@@ -1047,8 +1048,18 @@ img {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    padding: 0.3888888889rem 0;
+    padding: 0.3888888889rem;
   }
+}
+
+.social__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.0555555556rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer {
@@ -1088,8 +1099,133 @@ img {
   }
 }
 
-.social__item {
+.slider-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #F8FAF9;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .slider-section:before, .slider-section:after {
+    display: none;
+  }
+}
+.slider-section::before {
+  content: url(./assets/galka\ 1.jpg);
+  position: absolute;
+  left: 31px;
+}
+.slider-section::after {
+  content: url(./assets/right.png);
+  position: absolute;
+  right: 100px;
+}
+
+.picture {
+  width: 50%;
+  margin-left: 100px;
+}
+
+.slider__main-title {
+  font-size: 36px;
+  font-weight: bold;
+  width: 46%;
+}
+.slider__main-title::before {
+  content: url(./assets/gear\ 1.png);
+  position: absolute;
+  top: 59px;
+  background: gray;
+  border-radius: 23%;
+  width: 100px;
+  height: 100px;
+}
+
+.slider__title-desc {
+  font-weight: 600px;
+  font-size: 16px;
+  color: #666666;
+  width: 400px;
+  width: 45%;
+  line-height: 1.1;
+}
+
+.btn--theme--orange {
+  font-style: 1.0555555556rem;
+  font-weight: bold;
+  padding: 1rem 1.9444444444rem;
+  text-transform: uppercase;
+  border-radius: 5.5555555556rem;
+  line-height: 7;
+  text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  .btn--theme--orange {
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .btn--theme--orange {
+    margin-top: 0px;
+  }
+}
+.btn--theme--orange--theme--orange {
+  background: #fff;
+  color: #292929;
+}
+.btn--theme--orange--theme--orange:hover {
+  background: #E01F3D;
+  color: #fff;
+}
+
+.slider__subtitle-desc-two {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.slider__subtitle-desc {
+  color: #666666;
+  font-size: 16px;
+  margin: 15px;
+}
+
+.slider__title-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.subtitle-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.subtitle-desc-two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.subtitle-desc__item {
+  margin: 0 2.3333333333rem;
 }
