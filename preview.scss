@@ -9,6 +9,10 @@
         @include tablets {
             display: none;
         }
+
+        @include phones {
+            display: none;
+        }
     }
 
     &::before {

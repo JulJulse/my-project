@@ -130,6 +130,11 @@ img {
     display: none;
   }
 }
+@media screen and (max-width: 480px) {
+  .preview:before, .preview:after {
+    display: none;
+  }
+}
 .preview::before {
   content: url(./assets/Rectangle\ 14.png);
   position: absolute;
@@ -1259,4 +1264,5 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 0.7777777778rem;
+  color: #151515;
 }
