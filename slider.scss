@@ -10,6 +10,10 @@
         @include tablets {
             display: none;
         }
+
+        @include phones {
+            display: none;
+        }
     }
 
     &::before {
@@ -27,33 +31,41 @@
 
 .picture {
     width: 50%;
-    margin-left: 100px;
+    margin-left: rem(100px);
+
+    @include tablets {
+        position: relative;
+    }
 }
 
 .slider__main-title {
-    font-size: 36px;
+    font-size: rem(36px);
     font-weight: bold;
-    width: 46%;
+    width: 52%;
 
     &::before {
-        content: url(./assets/gear\ 1.png);
+        content: "";
         position: absolute;
-        top: 59px;
-        background: gray;
+        top: rem(59px);
+        background: gray url(./assets/gear\ 1.png) center no-repeat;
         border-radius: 23%;
         width: 100px;
         height: 100px;
-        
+
+        @include tablets {
+            background: none;
+        }
     }
 }
 
 .slider__title-desc {
-    font-weight: 600px;
-    font-size: 16px;
+    font-weight: rem(600px);
+    font-size: rem(16px);
     color: #666666;
-    width: 400px;
+    width: rem(400px);
     width: 45%;
     line-height: 1.1;
+    margin-right: rem(20px);
 }
 
 .btn--theme--orange{
@@ -62,11 +74,11 @@ font-weight: bold;
 padding: rem(18px) rem(35px);
 text-transform: uppercase;
 border-radius: rem(100px);
-line-height: 7;
+line-height: 1.1;
 text-decoration: none;
 
  @include tablets {
-    margin-top: 10px;
+    margin-top: rem(10px);
  }
 
  @include phones {
@@ -92,6 +104,8 @@ text-decoration: none;
     color: #666666;
     font-size: 16px;
     margin: 15px;
+    margin-right: 114px;
+    margin-top: 15px;
 }
 
 .slider__title-section {
@@ -112,4 +126,11 @@ justify-content: space-around;
 
 .subtitle-desc__item {
     margin: 0 rem(42px);
+}
+
+.price__desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: rem(14px);
 }
