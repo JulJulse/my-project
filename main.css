@@ -87,35 +87,71 @@ img {
   max-width: 100%;
 }
 
-.hamburger {
-  width: 24px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 20px;
-  position: fixed;
+.burger {
   display: none;
+  position: fixed;
+  top: 20px;
+  right: 10%;
+  height: 25px;
+  width: 40px;
+  cursor: pointer;
+  z-index: 15;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 @media screen and (max-width: 768px) {
-  .hamburger {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
+  .burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
-.hamburger__plank {
-  display: block;
-  background: #292929;
-  height: 4px;
-  border-radius: 10px;
+.burger__plank {
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.burger--active .burger__plank {
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  background-color: black;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.burger--active .burger__plank:nth-child(1) {
+  opacity: 0;
+}
+
+.burger--active .burger__plank:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.burger__plank:nth-child(2) {
+  top: 50%;
+  -webkit-transform: translateY(-50deg);
+          transform: translateY(-50deg);
+}
+
+.burger--active .burger__plank:nth-child(3) {
+  -webkit-transform: rotate(-45deg) translateY(-8px) translateX(5px);
+          transform: rotate(-45deg) translateY(-8px) translateX(5px);
+}
+
+.burger__plank:nth-child(3) {
+  bottom: 0;
+  top: initial;
 }
 
 .preview {
@@ -1305,4 +1341,28 @@ img {
   .slider-container {
     background: url(./assets/beats-headphones.png) center/50% auto no-repeat;
   }
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
 }
