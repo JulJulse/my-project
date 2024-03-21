@@ -60,7 +60,7 @@
 
     @include tablets {
         padding: 25%;
-        margin: -46px 0;
+        margin: rem(-129px) 0;
     }
 
     @include phones {

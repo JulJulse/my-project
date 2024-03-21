@@ -27,26 +27,22 @@
         position: absolute;
         right: 100px;
     }
-}
-
-.picture {
-    width: 50%;
-    margin-left: rem(100px);
 
     @include tablets {
-        position: relative;
+        display: flex;
+        flex-direction: column;
     }
 }
 
 .slider__main-title {
     font-size: rem(36px);
     font-weight: bold;
-    width: 52%;
+    width: 80%;
 
     &::before {
         content: "";
         position: absolute;
-        top: rem(59px);
+        top: rem(70px);
         background: gray url(./assets/gear\ 1.png) center no-repeat;
         border-radius: 23%;
         width: 100px;
@@ -63,9 +59,11 @@
     font-size: rem(16px);
     color: #666666;
     width: rem(400px);
-    width: 45%;
+    width: 69%;
     line-height: 1.1;
-    margin-right: rem(20px);
+    margin-right: rem(40px);
+
+    
 }
 
 .btn--theme--orange{
@@ -104,7 +102,7 @@ text-decoration: none;
     color: #666666;
     font-size: 16px;
     margin: 15px;
-    margin-right: 114px;
+    margin-right: 55px;
     margin-top: 15px;
 }
 
@@ -112,6 +110,16 @@ text-decoration: none;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include tablets {
+        display: flex;
+        align-content: center;
+        height: 114%;
+        
+        &::before &::after {
+            background: url(./assets/galka\ 1.jpg);
+        }
+    }
 }
 
 .subtitle-desc{
@@ -134,4 +142,18 @@ justify-content: space-around;
     justify-content: space-between;
     margin-top: rem(14px);
     color: #151515;
+}
+
+.slider-container {
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: rem(24px) rem(45px);
+    background: url(./assets/beats-headphones.png) right center / 50% auto no-repeat;
+
+    @include tablets {
+        background: url(./assets/beats-headphones.png) center / 50% auto no-repeat;
+    }
 }

@@ -187,7 +187,7 @@ img {
 @media screen and (max-width: 768px) {
   .preview__title-desc {
     padding: 25%;
-    margin: -46px 0;
+    margin: -7.1666666667rem 0;
   }
 }
 @media screen and (max-width: 480px) {
@@ -890,6 +890,10 @@ img {
           justify-content: center;
 }
 
+.order-section {
+  height: 100%;
+}
+
 .form__controls {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1138,26 +1142,27 @@ img {
   position: absolute;
   right: 100px;
 }
-
-.picture {
-  width: 50%;
-  margin-left: 5.5555555556rem;
-}
 @media screen and (max-width: 768px) {
-  .picture {
-    position: relative;
+  .slider-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
 .slider__main-title {
   font-size: 2rem;
   font-weight: bold;
-  width: 52%;
+  width: 80%;
 }
 .slider__main-title::before {
   content: "";
   position: absolute;
-  top: 3.2777777778rem;
+  top: 3.8888888889rem;
   background: gray url(./assets/gear\ 1.png) center no-repeat;
   border-radius: 23%;
   width: 100px;
@@ -1174,9 +1179,9 @@ img {
   font-size: 0.8888888889rem;
   color: #666666;
   width: 22.2222222222rem;
-  width: 45%;
+  width: 69%;
   line-height: 1.1;
-  margin-right: 1.1111111111rem;
+  margin-right: 2.2222222222rem;
 }
 
 .btn--theme--orange {
@@ -1216,7 +1221,7 @@ img {
   color: #666666;
   font-size: 16px;
   margin: 15px;
-  margin-right: 114px;
+  margin-right: 55px;
   margin-top: 15px;
 }
 
@@ -1231,6 +1236,19 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .slider__title-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    height: 114%;
+  }
+  .slider__title-section::before .slider__title-section::after {
+    background: url(./assets/galka\ 1.jpg);
+  }
 }
 
 .subtitle-desc {
@@ -1265,4 +1283,26 @@ img {
           justify-content: space-between;
   margin-top: 0.7777777778rem;
   color: #151515;
+}
+
+.slider-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  padding: 1.3333333333rem 2.5rem;
+  background: url(./assets/beats-headphones.png) right center/50% auto no-repeat;
+}
+@media screen and (max-width: 768px) {
+  .slider-container {
+    background: url(./assets/beats-headphones.png) center/50% auto no-repeat;
+  }
 }
