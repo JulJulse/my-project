@@ -5,6 +5,7 @@
     align-items: center;
     background: #F8FAF9;
     position: relative;
+    height: 100%;
 
     &:before, &:after {
         @include tablets {
@@ -38,20 +39,6 @@
     font-size: rem(36px);
     font-weight: bold;
     width: 80%;
-
-    &::before {
-        content: "";
-        position: absolute;
-        top: rem(70px);
-        background: gray url(./assets/gear\ 1.png) center no-repeat;
-        border-radius: 23%;
-        width: 100px;
-        height: 100px;
-
-        @include tablets {
-            background: none;
-        }
-    }
 }
 
 .slider__title-desc {
@@ -146,14 +133,13 @@ justify-content: space-around;
 
 .slider-container {
     display: flex;
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     height: 100%;
     padding: rem(24px) rem(45px);
-    background: url(./assets/beats-headphones.png) right center / 50% auto no-repeat;
 
     @include tablets {
-        background: url(./assets/beats-headphones.png) center / 50% auto no-repeat;
+        display: flex;
+        flex-direction: column;
     }
 }
