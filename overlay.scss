@@ -27,5 +27,32 @@
 
   .overlay.menu--item {
     display: flex;
+  }
 
+  
+  
+  .overlay .menu{
+    &__item{
+      margin-bottom:20px;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      
+      &:after{
+        content:'';
+        display: inline-block;
+        height: 5px;
+        width: 5px;
+        border-radius:50%;
+        margin-top:10px;
+      }
+      
+      &:last-child{
+        margin-bottom:0;
+        
+        &:after{
+          display:none;
+        }
+      }
+    }
   }
