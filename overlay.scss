@@ -1,29 +1,31 @@
-.overlay {
-    display: none;
+.overlay{
     height: 100%;
     width: 100%;
     background-color: black;
     display: flex;
-    align-items: center;
+    align-items:center;
     justify-content: center;
-    transition: all 0.4s;
-    position: fixed;
-    top: 0;
-    left: 100%;
-    opacity: 0;
+    transition:all .4s;
+    
+    position:fixed;
+    top:0;
+    left:100%;
+    opacity:0;
     width: 100%;
     height: 100%;
     z-index: 10;
+  }
 
-    @include tablets {
-        display: inline;
-    }
-}
+  .overlay--active{
+    left: 0;
+    opacity:1;
+  }
 
-.overlay .menu {
+  .overlay__menu {
+    color: white;
+  }
+
+  .overlay.menu--item {
     display: flex;
-    flex-direction: column;
-}
 
-
-
+  }
