@@ -51,14 +51,11 @@
     }
   }
 
-
-    
-    &__link{
+    .menu__link{
       &:hover{
         opacity:.7;
       }
     }
-  }
 
 
   .overlay .menu__list {

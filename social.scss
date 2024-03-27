@@ -2,7 +2,7 @@
     display: flex;
     justify-content: flex-end;
     align-content: flex-start;
-    margin-top: rem(-35px);
+
 
     @include phones {
         margin-top: 0;

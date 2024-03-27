@@ -1,29 +1,129 @@
-.reviews__switcher {
-display: flex;
-justify-content: center;
-padding: 13px;
-}
-
-.interactive-avatar {
-    width: 80px;
-    height: 80px;
-    border: 6px solid #E01F3D;
+.container{
+    max-width:940px;
+    margin:0 auto;
+  }
+  
+  .reviews {
+    position: relative;
+  
+    &:before {
+      content: '';
+      position: absolute;
+      width: 16%;
+      height: 13.23%;
+      right: 0;
+    }
+  
+    &:after {
+      content: '';
+      position: absolute;
+      width: 14.36%;
+      height: 29.7%;
+      left: 0;
+    }
+  }
+  
+  .reviews__wrap {
+    position: relative;
+    display: none;
+    background-position: right top;
+    background-repeat: no-repeat;
+    padding: 50px;
+    margin-bottom: 16px;
+  }
+  
+  .reviews__avatar {
+    max-width: 250px;
+    max-height: 250px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  
+  }
+  
+  .reviews__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .reviews__desc {
+    margin-left: 20px;
+    max-width: 50%;
+  
+  
+    & h3 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+  
+    & p {
+      color: black;
+      line-height: 1.2;
+      margin-bottom: 25px;
+      font-size: 16px;
+      color: #666666;
+    }
+  
+    & h4 {
+      color: black;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  }
+  
+  .reviews__list {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .reviews__item {
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
     overflow: hidden;
+    margin-right: 3px;
+    border: 7px solid transparent;
+    box-shadow:0 0 5px #F8FAF9;
+    cursor: pointer;
+  
+    &:last-child {
+      margin-right: 0;
+    }
+  
+    &--active {
+      border-color: red;
+    }
+    
+    
+  }
+  
+  .reviews__link{
+      display:block;
+      height:100%;
+      width:100%;
+    }
+  
+  .reviews__preview {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .reviews__wrap--active{
+    background:#F8FAF9;
     position: relative;
-}
+    display: flex;
+    background-position: right top;
+    background-repeat: no-repeat;
+    padding: 50px;
+    margin-bottom: 16px;
+  }
 
-.interactive-avatar__link {
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-}
-
-.interactive-avatar-img {
-    margin: 0 12px;
-}
-
-.container__section {
-    background: #F8FAF9;
-}
+  .section-title--reviews {
+    font-size: 48px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+  }
