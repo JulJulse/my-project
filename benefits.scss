@@ -23,9 +23,8 @@
         right: 0;
         transform: translateX(50%);
 
-        @include phones {
-            display: none;
-            padding: 0;
+        @include tablets {
+            opacity: 0;
         }
 
         &:before:last-child {

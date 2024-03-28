@@ -10,10 +10,10 @@
 
     @include tablets {
         position: absolute;
-        top: 35%;
-        left: 36%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         color: #fff;
-        height: 100%;
         background: black;
         transition: transform .5s;
     }

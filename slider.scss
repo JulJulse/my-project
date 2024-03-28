@@ -5,6 +5,7 @@
     align-items: center;
     background: #F8FAF9;
     position: relative;
+    top: 100px;
 
     &:before, &:after {
         @include tablets {
@@ -152,6 +153,7 @@ justify-content: space-around;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background: transparent;
 
     @include tablets {
         display: flex;
@@ -164,10 +166,15 @@ justify-content: space-around;
     border: none;
     background: none;
     cursor: pointer;
+    top: 162px;
 }
 
 
 .data-linked-with {
      display: none;
+}
+
+.btn--arrow {
+    transform: translate(0, 200px);
 }
 

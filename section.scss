@@ -6,7 +6,7 @@
     justify-content: center;
 
     @include phones {
-        top: 0;
+        top: 21px;
     }
 }
 
@@ -32,10 +32,6 @@
 .headline__title {
     margin-bottom: rem(25px);
     line-height: 1;
-
-    @include phones {
-        margin-top: 378px;
-    }
 }
 
 .headline__subtitle {
