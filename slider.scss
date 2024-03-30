@@ -18,29 +18,6 @@
     }
 }
 
-    .slider-section-red{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        background: #F8FAF9;
-        position: relative;
-    
-        &:before, &:after {
-            @include tablets {
-                display: none;
-            }
-    
-            @include phones {
-                display: none;
-            }
-        }
-
-    @include tablets {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
 .slider__main-title {
     font-size: rem(36px);
     font-weight: bold;
@@ -87,7 +64,7 @@ text-decoration: none;
 }
 }
 
-.slider__subtitle-desc-two {
+.slider__subtitle-desc {
     font-weight: bold;
     font-size: 18px;
 }
@@ -98,6 +75,7 @@ text-decoration: none;
     margin: 15px;
     margin-right: 55px;
     margin-top: 15px;
+    display: flex;
 }
 
 .slider__title-section {
@@ -121,39 +99,12 @@ text-decoration: none;
     justify-content: space-around;
 }
 
-.subtitle-desc-two {
-display: flex;
-justify-content: space-around;
-}
-
 .subtitle-desc__item {
     margin: 0 rem(42px);
 }
 
-.price__desc {
+.product {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: rem(14px);
-    color: #151515;
-}
-
-.slider-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    @include tablets {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-.slider-container-red {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background: transparent;
 
     @include tablets {
         display: flex;
@@ -169,12 +120,32 @@ justify-content: space-around;
     top: 162px;
 }
 
-
-.data-linked-with {
-     display: none;
+.price {
+    display: flex;
+    align-items: baseline;
 }
 
-.btn--arrow {
-    transform: translate(0, 200px);
+.price h1 {
+    font-family: play;
 }
+
+.charging {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 15px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.two {
+    color: #292929;
+    font-weight: bold;
+}
+
+.time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 

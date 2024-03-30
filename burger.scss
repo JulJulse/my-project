@@ -73,11 +73,13 @@
       
       &:nth-child(2){
         transform:rotate(45deg);
+        background: #fff;
 
       }
       
       &:nth-child(3){
         transform:rotate(-45deg) translateY(-8px) translateX(5px);
+        background: #fff;
       }
     }
   }
@@ -91,3 +93,7 @@
     overflow:hidden;
   }
 
+
+  .burger--active {
+    color: white;
+  }
