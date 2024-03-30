@@ -5,7 +5,6 @@
     align-items: center;
     background: #F8FAF9;
     position: relative;
-    top: 100px;
 
     &:before, &:after {
         @include tablets {
@@ -149,3 +148,23 @@ text-decoration: none;
 }
 
 
+@include tablets {
+.container--slider img {
+    transform: translate(50%, -14%);
+    width: 50%;
+}
+}
+
+.btn-arrow--right {
+    transform: translate(-88px, 234px);
+
+    @include tablets {
+        transform: translate(-7px, 290px);
+    }
+}
+
+.btn-arrow--left {
+    display: flex;
+    flex-direction: row-reverse;
+    transform: translateY(-321px)
+}

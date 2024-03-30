@@ -8,10 +8,12 @@
     &:before, &:after {
         @include tablets {
             display: none;
+            height: auto;
         }
 
         @include phones {
             display: none;
+            height: auto;
         }
     }
 
@@ -59,7 +61,7 @@
     line-height: 1.1;
 
     @include tablets {
-        padding: 25%;
+        padding: 30%;
         margin: rem(-129px) 0;
     }
 
