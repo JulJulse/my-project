@@ -35,6 +35,10 @@
     color: #fff;
     cursor: pointer;
     font-size: rem(16px);
+    
+        @include tablets {
+            color: red;
+    }
 }
 
 .radio {

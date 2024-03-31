@@ -1,6 +1,14 @@
 .map-section {
     background: url(./assets/map.png) center no-repeat;
-    width:100%; 
-    height:100%;
+    width:auto; 
+    height:652px;
     background-size: cover;
+
+    @include tablets {
+        height:652px;
+    }
+
+    @include phones {
+        height:482px;
+    }
 }

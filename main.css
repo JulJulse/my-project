@@ -886,6 +886,7 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: 966px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -894,11 +895,12 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    height: 966px;
   }
 }
 
 .delivery-form {
-  min-height: 100vh;
+  min-height: 652px;
   background: #181818;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1124,6 +1126,11 @@ img {
   cursor: pointer;
   font-size: 0.8888888889rem;
 }
+@media screen and (max-width: 768px) {
+  .btn-2 {
+    color: red;
+  }
+}
 
 .radio {
   display: -webkit-box;
@@ -1224,9 +1231,19 @@ img {
 
 .map-section {
   background: url(./assets/map.png) center no-repeat;
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: 652px;
   background-size: cover;
+}
+@media screen and (max-width: 768px) {
+  .map-section {
+    height: 652px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .map-section {
+    height: 482px;
+  }
 }
 
 .social {
@@ -1396,10 +1413,8 @@ img {
     display: flex;
     -ms-flex-line-pack: center;
         align-content: center;
-    height: 114%;
-  }
-  .slider__title-section::before .slider__title-section::after {
-    background: url(./assets/galka\ 1.jpg);
+    text-align: center;
+    height: 100%;
   }
 }
 
@@ -1494,27 +1509,15 @@ img {
     width: 50%;
   }
 }
-.btn-arrow--right {
-  -webkit-transform: translate(-88px, 234px);
-          transform: translate(-88px, 234px);
-}
-@media screen and (max-width: 768px) {
-  .btn-arrow--right {
-    -webkit-transform: translate(-7px, 290px);
-            transform: translate(-7px, 290px);
-  }
+.btn-arrow--left {
+  position: absolute;
+  top: 243px;
 }
 
-.btn-arrow--left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  -webkit-transform: translateY(-321px);
-          transform: translateY(-321px);
+.btn-arrow--right {
+  position: absolute;
+  right: 0;
+  top: 244px;
 }
 
 .overlay {

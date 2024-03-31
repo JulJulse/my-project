@@ -1,20 +1,23 @@
 .delivery-form__form {
     display: flex;
+
     
 
     @include tablets {
         padding: 0 19px;
-        flex-direction: column
+        flex-direction: column; 
+        height: 966px;
     }
 
     @include phones {
         padding: 0;
         justify-content: center;
+        height: 966px;
     }
 }
 
 .delivery-form {
-    min-height: 100vh;
+    min-height: 652px;
 
     background: #181818;
 

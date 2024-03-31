@@ -85,11 +85,8 @@ text-decoration: none;
     @include tablets {
         display: flex;
         align-content: center;
-        height: 114%;
-        
-        &::before &::after {
-            background: url(./assets/galka\ 1.jpg);
-        }
+        text-align: center;
+        height: 100%;
     }
 }
 
@@ -155,16 +152,14 @@ text-decoration: none;
 }
 }
 
-.btn-arrow--right {
-    transform: translate(-88px, 234px);
-
-    @include tablets {
-        transform: translate(-7px, 290px);
-    }
-}
 
 .btn-arrow--left {
-    display: flex;
-    flex-direction: row-reverse;
-    transform: translateY(-321px)
+    position: absolute;
+    top: 243px;
+}
+
+.btn-arrow--right {
+    position: absolute;
+    right: 0;
+    top: 244px;
 }
