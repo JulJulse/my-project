@@ -5,6 +5,7 @@
     right: 0;
     padding: rem(24px);
     background: #fff;
+    height: auto;
 }
 
 .footer__container {
@@ -15,7 +16,14 @@
     align-items: flex-start;
     flex-direction: row;
 
+
+    @include tablets {
+        display: flex;
+        flex-direction: row;
+    }
+
     @include phones {
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
     }
 }

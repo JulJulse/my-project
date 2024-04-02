@@ -254,7 +254,7 @@ img {
 }
 @media screen and (max-width: 768px) {
   .preview__title-desc {
-    padding: 30%;
+    padding: 29%;
     margin: -7.1666666667rem 0;
   }
 }
@@ -1232,18 +1232,8 @@ img {
 .map-section {
   background: url(./assets/map.png) center no-repeat;
   width: auto;
-  height: 652px;
+  height: 100%;
   background-size: cover;
-}
-@media screen and (max-width: 768px) {
-  .map-section {
-    height: 652px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .map-section {
-    height: 482px;
-  }
 }
 
 .social {
@@ -1276,6 +1266,10 @@ img {
           align-items: center;
 }
 
+.social__link:nth-child(3) {
+  color: #B3B3B3;
+}
+
 .footer {
   position: relative;
   bottom: 0;
@@ -1283,6 +1277,7 @@ img {
   right: 0;
   padding: 1.3333333333rem;
   background: #fff;
+  height: auto;
 }
 
 .footer__container {
@@ -1300,12 +1295,26 @@ img {
       -ms-flex-direction: row;
           flex-direction: row;
 }
+@media screen and (max-width: 768px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
 @media screen and (max-width: 480px) {
   .footer__container {
-    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -1521,10 +1530,10 @@ img {
 }
 
 .about__item {
-  background: rgba(223, 222, 222, 0.8);
-  width: 170px;
-  height: 147px;
-  border-radius: 20px;
+  background: rgb(212, 208, 208);
+  width: 177px;
+  height: 170px;
+  border-radius: 4px;
 }
 
 .about--text {
@@ -1538,6 +1547,14 @@ img {
   font-size: 16px;
   font-weight: 400;
   font-family: play;
+  padding: 3px 0;
+}
+
+.about--text img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px 13px;
 }
 
 .overlay {
