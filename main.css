@@ -406,15 +406,86 @@ img {
   margin-right: 0.3333333333rem;
 }
 
+.phone-number:hover {
+  color: red;
+}
+
+.phone-number__icon-elem:hover {
+  background-image: url(./assets/ph.png);
+}
+
 @media screen and (max-width: 768px) {
   .header__phone-number {
     display: none;
   }
 }
 
+@media screen and (max-width: 480px) {
+  .phone-number__text {
+    color: #292929;
+  }
+}
+
 .adress {
   font-size: 18px;
   color: #292929;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  font-family: play;
+}
+@media screen and (max-width: 480px) {
+  .adress {
+    display: none;
+  }
+}
+
+.adress-phone {
+  display: none;
+}
+@media screen and (max-width: 480px) {
+  .adress-phone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: play;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.phone-number-phone {
+  font-size: 1.3333333333rem;
+  text-decoration: none;
+}
+
+.phone-number-phone {
+  font-size: 1rem;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 153px;
+}
+
+.phone-number__icon-elem-phone {
+  width: 0.6666666667rem;
+  height: 0.6666666667rem;
+  margin-right: 0.3333333333rem;
 }
 
 .features {
@@ -1240,7 +1311,6 @@ img {
 
 .map-section {
   background: url(./assets/map.png) center no-repeat;
-  width: 172vh;
   height: 100vh;
   background-size: cover;
 }
@@ -1303,6 +1373,24 @@ img {
       -ms-flex-direction: row;
           flex-direction: row;
   padding: 9px 0;
+}
+@media screen and (max-width: 480px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 9px 0;
+  }
 }
 
 .slider-section {

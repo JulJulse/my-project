@@ -14,4 +14,12 @@
     flex-direction: row;
     padding: 9px 0;
 
+    @include phones {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 9px 0;
+    }
+
 }

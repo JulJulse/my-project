@@ -64,10 +64,19 @@
     width: 153px;
 }
 
-.phone-number__icon-elem {
+.phone-number__icon-elem{
     width: rem(12px);
     height: rem(12px);
     margin-right: rem(6px);
+
+}
+
+.phone-number:hover {
+    color: red;
+}
+
+.phone-number__icon-elem:hover {
+    background-image: url(./assets/ph.png);
 }
 
 .header__phone-number {
@@ -76,9 +85,57 @@
     }
 }
 
+.phone-number__text  {
+@include tablets{
+
+}
+
+@include phones {
+    color: #292929;
+}
+}
+
 .adress {
     font-size: 18px;
     color: #292929;
+    display: flex;
+    flex-direction: column-reverse;
+    font-family: play;
+
+    @include phones {
+        display: none;
+    }
+}
+
+.adress-phone {
+    display: none;
+
+    @include phones {
+        display: flex;
+        font-family: play;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+
+.phone-number-phone {
+    font-size: rem(24px);
+    text-decoration: none;
+}
+
+.phone-number-phone {
+    font-size: rem(18px);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    width: 153px;
+}
+
+.phone-number__icon-elem-phone {
+    width: rem(12px);
+    height: rem(12px);
+    margin-right: rem(6px);
 }
 
 
