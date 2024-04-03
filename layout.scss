@@ -37,6 +37,12 @@ body {
     position: relative;
 }
 
+.maincontent {
+    height: 100%;
+    transition: transform 1s;
+    will-change: transform;
+}
+
 //tag
 h1,
 h2,

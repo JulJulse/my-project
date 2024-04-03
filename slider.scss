@@ -185,3 +185,33 @@ text-decoration: none;
     display: flex;
     padding: 0px 13px
 }
+
+.slider-menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    opacity: 0;
+}
+
+.slider-menu__item {
+    display: flex;
+}
+
+.slider-menu__title {
+    position: relative;
+    width: 100px;
+}
+
+.slider-menu__content {
+    background: #333537E5;
+    width: 0;
+    position: relative;
+    overflow: hidden;
+    transition: width .7s;
+}
+
+.slider-menu__container {
+    padding: 40px 73px 45px 26px;
+}
